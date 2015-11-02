@@ -4,10 +4,10 @@
   "description": "VideoCapturePlus PhoneGap Plugin (npm)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OverlappingElvis/VideoCapturePlus-PhoneGap-Plugin.git"
+    "url": "https://github.com/OverlappingElvis/VideoCapturePlus-PhoneGap-Plugin.git"
   },
   "cordova": {
-    "id": "cordova-plugin-file",
+    "id": "video-capture-plus-phonegap-plugin",
     "platforms": [
       "android",
       "ios"
