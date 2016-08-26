@@ -44,15 +44,6 @@
 @implementation VideoCapturePlus
 @synthesize inUse, timer;
 
-- (id)initWithWebView:(UIWebView*)theWebView
-{
-    self = (VideoCapturePlus*)[super initWithWebView:theWebView];
-    if (self) {
-        self.inUse = NO;
-    }
-    return self;
-}
-
 -(void)rotateOverlayIfNeeded:(UIView*) overlayView {
     UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
     
