@@ -91,7 +91,7 @@
         float width = CGRectGetWidth(pickerController.view.frame);
         float height = CGRectGetHeight(pickerController.view.frame);
 
-        if (CDV_IsIPad()) {
+        if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
             if (UIDeviceOrientationIsLandscape(deviceOrientation)) {
                 [overlayView setCenter:CGPointMake(height/2,width/2)];
             } else {
