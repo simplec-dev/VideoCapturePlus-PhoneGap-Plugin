@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="com.simplc.plugins.videocaptureplus"
-        version="1.3.1">
+        version="1.3.2">
 
   <name>VideoCapturePlus</name>
 
@@ -25,6 +25,21 @@
 
   <!-- ios -->
   <platform name="ios">
+
+        <preference name="CAMERA_USAGE_DESCRIPTION" default="App would like to access the camera" />
+        <config-file target="*-Info.plist" parent="NSCameraUsageDescription">
+            <string>$CAMERA_USAGE_DESCRIPTION</string>
+        </config-file>
+
+        <preference name="MICROPHONE_USAGE_DESCRIPTION" default="App would like to access the microphone" />
+        <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+            <string>$MICROPHONE_USAGE_DESCRIPTION</string>
+        </config-file>
+
+        <preference name="PHOTOLIBRARY_USAGE_DESCRIPTION" default="App would like to access the library" />
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+            <string>$PHOTOLIBRARY_USAGE_DESCRIPTION</string>
+        </config-file>
 
     <config-file target="config.xml" parent="/*">
       <feature name="VideoCapturePlus">
